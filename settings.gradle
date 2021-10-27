@@ -10,7 +10,12 @@ pluginManagement {
             }
         }
     }
+    plugins {
+        id 'com.hawkeyeinnovations.hawkeye-gradle-plugin' version "${hawkeyeGradlePluginVersion}"
+        id 'io.spring.dependency-management' version "${springDependencyManagementVersion}"
+        id 'org.springframework.boot' version "${springBootVersion}"
+    }
 }
 
 // Required as in MultiBranch builds this name is appended with branch/PR name
-rootProject.name = 'JavaLibraryTemplate'
+rootProject.name = 'ZippingS3Files'
