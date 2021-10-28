@@ -17,7 +17,7 @@ public class CreateEC2Instance {
             .build();
 
         // Create instance
-        String instanceId = createEC2Instance(ec2, amiId) ;
+        String instanceId = createEC2Instance(ec2, amiId);
 
         /*
         I assume we won't want (or need) to ssh onto this instance, but if we did this is how you can create a ssh key
