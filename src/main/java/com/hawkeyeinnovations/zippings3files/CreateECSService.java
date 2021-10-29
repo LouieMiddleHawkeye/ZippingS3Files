@@ -8,6 +8,13 @@ public class CreateECSService {
 
     public static void main(String[] args) {
         String clusterName = "dynamic-zipping-cluster";
+
+        /*
+
+        TODO need to make a task definition with an ECR repository image
+
+         */
+
 //        String serviceName = "dynamic-zipping-service";
 //        String securityGroup = "dynamic-zipping-security-group";
 //        String subnet = "dynamic-zipping-subnet";
