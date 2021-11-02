@@ -31,6 +31,7 @@ public class CreateECSService {
 //        String serviceArn = createECSService(ecsClient, clusterName, serviceName, securityGroup, subnet, taskDefinition);
 //        System.out.println("The service ARN is " + serviceArn);
 
+//        deleteECSService(ecsClient, clusterName, serviceArn);
         ecsClient.close();
     }
 
@@ -90,5 +91,20 @@ public class CreateECSService {
             System.exit(1);
         }
         return "";
+    }
+
+    public static void deleteECSService(EcsClient ecsClient, String clusterName, String serviceArn) {
+        try {
+            DeleteServiceRequest serviceRequest = DeleteServiceRequest.builder()
+                .cluster(clusterName)
+                .service(serviceArn)
+                .build();
+
+            ecsClient.deleteService(serviceRequest);
+            System.out.println("The Service was successfully deleted");
+        } catch (EcsException e) {
+            System.err.println(e.awsErrorDetails().errorMessage());
+            System.exit(1);
+        }
     }
 }
