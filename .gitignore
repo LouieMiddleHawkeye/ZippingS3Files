@@ -2,3 +2,6 @@
 .gradle/
 build/
 out/
+aws-s3-zipper/node_modules/
+aws-s3-zipper/package-lock.json
+aws-s3-zipper/*.zip

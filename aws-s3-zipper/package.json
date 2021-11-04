@@ -1,0 +1,22 @@
+{
+    "name": "aws-s3-zipper-test",
+    "version": "0.1.0",
+    "description": "Zip files from and to an Amazon AWS S3 Bucket directory as a stream, file or fragments. Allows filtering files.",
+    "main": "test.js",
+    "scripts": {
+        "start": "node test.js"
+    },
+    "dependencies": {
+        "aws-s3-zipper": "https://github.com/LouieMiddleHawkeye/aws-s3-zipper/tarball/master"
+    },
+    "repository": "https://github.com/LouieMiddleHawkeye/ZippingS3Files.git",
+    "keywords": [
+        "zip",
+        "amazon",
+        "aws",
+        "s3"
+    ],
+    "author": "Louie Middle",
+    "license": "MIT",
+    "readmeFilename": "README.md"
+}
