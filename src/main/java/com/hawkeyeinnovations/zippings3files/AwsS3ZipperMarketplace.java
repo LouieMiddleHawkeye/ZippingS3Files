@@ -10,8 +10,8 @@ public class AwsS3ZipperMarketplace {
         OkHttpClient client = new OkHttpClient().newBuilder()
             .build();
         RequestBody body = new MultipartBody.Builder().setType(MultipartBody.FORM)
-            .addFormDataPart("awsKey","AKIAQMVBC43AMBLBOGFX")
-            .addFormDataPart("awsSecret","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")
+            .addFormDataPart("awsKey","-")
+            .addFormDataPart("awsSecret","-")
             .addFormDataPart("awsBucket","louiem-test-zipper")
             .addFormDataPart("awsRegion","eu-west-1")
             .addFormDataPart("resultsEmail","louie.middle@hawkeyeinnovations.com")
