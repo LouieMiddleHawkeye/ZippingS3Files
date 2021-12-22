@@ -11,7 +11,7 @@ public class AwsS3ZipperMarketplaceCheckStatus {
         OkHttpClient client = new OkHttpClient().newBuilder()
             .build();
         MediaType mediaType = MediaType.parse("application/json");
-        RequestBody body = RequestBody.create(mediaType, "{\"zipID\": \"c6776c2d-045f-402e-91e2-b7402cbc7cf0\"\n}");
+        RequestBody body = RequestBody.create(mediaType, "{\"zipID\": \"-\"\n}");
         Request request = new Request.Builder()
             .url("http://ec2-18-203-68-6.eu-west-1.compute.amazonaws.com/v2/status")
             .method("POST", body)
